@@ -8,6 +8,7 @@ This project is great for practicing DOM manipulation, event handling, and basic
 - Perform basic arithmetic operations: Addition, Subtraction, Multiplication, Division
 - Clear and intuitive user interface
 - Responsive layout for different screen sizes
+- Keyboard support for quick and accessible input
 - Real-time calculation as you input
 
 ## 🔗 Live Demo 
