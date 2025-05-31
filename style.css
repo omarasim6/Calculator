@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: rgb(61, 61, 61);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    background: #1f1f17;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.calculator form input {
+    border: 0;
+    outline: 0;
+    width: 65px;
+    height: 65px;
+    border-radius: 10px;
+    background: #3d3d3d;
+    font-size: 24px;
+    color: whitesmoke;
+    cursor: pointer;
+    margin: 7px;
+}
+
+/* Display input */
+form .display {
+    display: flex;
+    justify-content: flex-end;
+    margin: 25px 0;
+}
+
+form .display input {
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    cursor: text;  /* show text cursor */
+    user-select: text; /* allow text select */
+}
+
+form input.delete {
+    width: 150px;
+    background-color: rgb(223, 6, 6);
+}
+
+form input.equal {
+    border-radius: 80px;
+    background-color: rgb(223, 6, 6);
+    font-size: 35px;
+    margin: 6px;
+    width: 70px;
+    height: 70px;
+}
+
+/* ✅ Prevent display input from scaling */
+.calculator form input[type="button"]:active {
+    transform: scale(0.95);
+}
+
+/* ✅ No transform on the input display */
+form .display input:active {
+    transform: none !important;
+}
+
+/* ✅ No hover effect for AC and equal buttons */
+.calculator form input.delete:hover,
+.calculator form input.equal:hover {
+    background-color: rgb(223, 6, 6) !important;
+    cursor: default !important;
+    transition: none !important;
+}
+
+/* ✅ Button hover effect for all others */
+.calculator form input:not(.delete):not(.equal):hover {
+    background-color: #5a5a5a;
+}
+
+/* ✅ Error message styling */
+input.error {
+    color: red;
+    font-weight: bold;
+    font-size: 20px; /* smaller than 45px display font */
+}
+
