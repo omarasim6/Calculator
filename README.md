@@ -10,9 +10,9 @@ This project is great for practicing DOM manipulation, event handling, and basic
 - Responsive layout for different screen sizes
 - Real-time calculation as you input
 
-## Live Demo 
+## 🔗 Live Demo 
 
-[Click here to view the live app](https://omarasim6.github.io/To-Do-List-App/)
+[Click here to view the live app](https://omarasim6.github.io/Calculator/)
 
 ## 🛠️ Tech Stack
 
@@ -20,3 +20,4 @@ This project is great for practicing DOM manipulation, event handling, and basic
 - **CSS** – Styling and responsiveness
 - **JavaScript** – Logic and interaction
 
+---
